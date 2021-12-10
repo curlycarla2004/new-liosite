@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Everywhere coaching – Le sport partout, pour tous{% endblock %}
+{% block description %}Everywhere coaching – Le sport partout, pour tous{% endblock %}
+
+{% block body %}
+
+<section class="module bg-dark-60 about-page-header" data-background="{{ asset('images/lio4.jpg') }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h2 class="module-title font-alt">Types de séances</h2>
+          <div class="module-subtitle text-weight">Vous êtes plutôt solo, duo ou alors entre collègues ou amis…<br><br>
+            Pas d’inquiétudes à avoir, je m’adapte à vos préférences, pour répondre du mieux possible à vos attentes et votre vision du sport. </div>
+        </div>
+      </div>
+    </div>
+</section>
+<section class="module" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 align-center">
+            <img src="{{ asset('images/lio9.jpg') }}" alt="Feature Image">
+        </div>
+        <div class="col-sm-7">
+          <div class="module-subtitle align-left">En fonction de vos envies et de vos préférences, je vous propose différentes manières d’organiser vos séances et de vous prendre en charge :<br><br>
+            – Séance individualisée : en 1 to 1, je vous créerais un programme adapté à votre profil et à vos objectifs.<br>
+            – Séance dualisée : en 1 to 2, pour les couples, amis qui préfèrent s’entrainer à 2. Je vous proposerais un programme commun et qui répondra au maximum à vos attentes.<br>
+            – Séance en small group training : jusqu’à 12 personnes, pour des cours typés HIIT, Renforcement musculaire…
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

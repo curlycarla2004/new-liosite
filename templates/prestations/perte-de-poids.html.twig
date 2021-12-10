@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Everywhere coaching – Le sport partout, pour tous{% endblock %}
+{% block description %}Everywhere coaching – Le sport partout, pour tous{% endblock %}
+
+{% block body %}
+
+<section class="module bg-dark-60 about-page-header" data-background="{{ asset('images/lio4.jpg') }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h2 class="module-title font-alt">Perte de poids</h2>
+          <div class="module-subtitle text-weight">Reprenez le contrôle de votre corps ? <br><br>
+            Marre des kilos superflus, envie de retrouver votre ligne d’avant… </div>
+        </div>
+      </div>
+    </div>
+</section>
+<section class="module" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="module-subtitle align-left">Il n’est pas rare, au fil des années, de voir notre poids augmenter petit à petit sans que l’on s’en rende compte et à un moment donné, on ouvre les yeux et c’est déjà trop tard… 
+              Plusieurs facteurs peuvent provoquer cela, un changement de rythme de vie, un nouveau travail, une grossesse, ou une blessure…<br><br>
+            Pas d’inquiétudes à avoir, beaucoup de solutions sont envisageables pour retrouver votre ligne d’antan.<br><br>
+            On utilisera un programme d’entrainement basé sur le cardio, en mixant des méthodes telles que le HIIT, Aerobic Capacity…<br><br>
+            On associera aux entrainements, un rééquilibrage alimentaire, pour reprendre de bonnes habitudes petit à petit.<br>
+            Je vous invite pour cela à aller voir la page suivi nutrition en cliquant sur le bouton ci-dessous.<br>
+            </div>
+            <div class="module-subtitle align-center"><a href="{{ path('suivi') }}"><button class="btn btn-border-d btn-circle">Suivi Nutrition</button></a></div>
+            <div class="module-subtitle align-center">Les maîtres mots seront : <b>assiduité</b>, <b>ténacité</b> et <b>confiance</b>.</div>
+        </div>
+        <div class="col-sm-5 align-center">
+            <img src="{{ asset('images/lio12.jpg') }}" alt="Feature Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

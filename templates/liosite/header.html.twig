@@ -1,0 +1,39 @@
+<nav class="navbar navbar-custom navbar-fixed-top navbar" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="{{ path('home') }}">everywhere coaching</a>
+      </div>
+      <div class="collapse navbar-collapse" id="custom-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="{{ path('home') }}">Accueil</a>
+          </li>
+          <li><a href="{{ path('about') }}">Qui suis-je?</a>
+          </li>
+          <li class="dropdown"><a class="dropdown-toggle dropdown-toggle-split" href="{{ path('prestations') }}" data-toggle="dropdown">Prestations</a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ path('correction') }}">Correction posturale</a>
+              </li>
+              <li><a href="{{ path('lieux') }}">Lieux des séances</a>
+              </li>
+              <li><a href="{{ path('musculation') }}">Musculation fonctionnelle</a>
+              </li>
+              <li><a href="{{ path('perte') }}">Perte de poids</a>
+              </li>
+              <li><a href="{{ path('prepaconcours') }}">Préparation aux concours</a>
+              </li>
+              <li><a href="{{ path('preparation') }}">Préparation physique</a>
+              </li>
+              <li><a href="{{ path('reathletisation') }}">Ré-athlétisation</a></li>
+              <li><a href="{{ path('suivi') }}">Suivi nutrition</a></li>
+              <li><a href="{{ path('types') }}">Types de séances</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a>
+          </li>
+          <li><a href="https://www.facebook.com/everywherecoaching/" target="_blank" style="width: 150% !important;"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li><a href="https://www.instagram.com/everywhere_coaching/?utm_source=ig_embed" target="_blank"><i class="fa fa-instagram"></i></a>
+        </ul>
+      </div>
+    </div>
+  </nav>

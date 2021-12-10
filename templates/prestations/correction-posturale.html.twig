@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Everywhere coaching – Le sport partout, pour tous{% endblock %}
+{% block description %}Everywhere coaching – Le sport partout, pour tous{% endblock %}
+
+{% block body %}
+<section class="module bg-dark-60 about-page-header" data-background="{{ asset('images/lio4.jpg') }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <h2 class="module-title font-alt">Correction posturale</h2>
+          <div class="module-subtitle text-weight">Votre dos vous fait souffrir ? Vous avez des douleurs aux lombaires ?
+            Vous êtes assis plusieurs heures par jour ?<br><br>
+            L’objectif de ce programme sera de renforcer certaines zones de votre corps et corriger ainsi votre posture. </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="module" id="team">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5 align-center">
+          <img src="{{ asset('images/lio14.jpg') }}" alt="Feature Image">
+      </div>
+      <div class="col-sm-7">
+        <div class="module-subtitle align-left">Vous ressentez des douleurs dans votre corps en fin de journée, que ce soit dans le dos, les jambes ou encore des maux de tête… Ces douleurs peuvent avoir des origines diverses et variées.<br><br>
+          L’objectif de ce programme dans un premier temps sera de travailler sur les groupes musculaires qui vous font souffrir, en apprenant à étirer les parties raides, et en renforçant les parties trop faibles de votre corps.<br><br>
+          Dans un deuxième temps, si cette approche ne suffit pas, on pourra se pencher sur vos pieds ou vos yeux afin de voir si il y a un dysfonctionnement à ce niveau là.
+           Il s’agit là de <b>posturologie</b>, spécialité qui étudie les mécanismes de gestion de l’équilibre et ses dysfonctionnements.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}

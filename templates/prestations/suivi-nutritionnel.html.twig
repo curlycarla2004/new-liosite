@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Everywhere coaching – Le sport partout, pour tous{% endblock %}
+{% block description %}Everywhere coaching – Le sport partout, pour tous{% endblock %}
+
+{% block body %}
+
+<section class="module bg-dark-60 about-page-header" data-background="{{ asset('images/lio4.jpg') }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h2 class="module-title font-alt">Suivi nutritionnel</h2>
+          <div class="module-subtitle text-weight">Vous avez perdu le fil avec votre alimentation, vous n’avez pas le temps de cuisiner, vous vivez à 100 à l’heure. <br><br>
+            Je vous propose des solutions afin de reprendre votre alimentation en main, de la rééquilibrer et de ressentir les bienfaits de celle-ci. </div>
+        </div>
+      </div>
+    </div>
+</section>
+<section class="module" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="module-subtitle align-left">Le suivi nutritionnel est un accompagnement du point de vue alimentaire.
+            Plusieurs possibilités s’offrent à vous :<br><br>
+            – envie d’améliorer votre hygiène de vie<br>
+            – envie de compléter votre pratique sportive pour obtenir de meilleurs résultats<br>
+            – envie de vous sentir mieux dans votre corps et votre esprit<br><br>
+            L’idée est de rééquilibrer votre alimentation si celle-ci est devenue quelque peu anarchique.
+            Sur la base de conseils, d’informations et la mise en place d’un rééquilibrage alimentaire, nous irons chercher les résultats espérés.<br><br>
+            Je vous invite à vous rendre sur ma page personnelle sur laquelle vous trouverez des compléments alimentaires, made in France.<br>
+            Pour ma part, j’utilise cette gamme depuis maintenant plusieurs mois et je dois dire que mon ressenti est juste top, je ne vous en dis pas plus, allez voir par vous mêmes ;-)
+            </div>
+            <div class="module-subtitle align-center"><a href="https://beautysane.com/fr/?manager=033-176025" target="_blank"><button class="btn btn-border-d btn-circle">Shop</button></a></div>
+        </div>
+        <div class="col-sm-5 align-center">
+            <img src="{{ asset('images/lio12.jpg') }}" alt="Feature Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

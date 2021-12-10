@@ -1,0 +1,494 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Everywhere coaching – Le sport partout, pour tous{% endblock %}
+{% block description %}Everywhere coaching – Le sport partout, pour tous{% endblock %}
+
+{% block body %}
+
+      <section class="home-section home-full-height bg-dark-30" id="home" data-background="{{ asset('images/lio4.jpg') }}">
+        <div class="video-player" data-property="{videoURL:'https://www.youtube.com/watch?v=3fIJhUA-pVg', containment:'.home-section', startAt:0, mute:false, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:25}"></div>
+        <div class="video-controls-box">
+          <div class="container">
+            <div class="video-controls"><a class="fa fa-volume-up" id="video-volume" href="#">&nbsp;</a><a class="fa fa-pause" id="video-play" href="#">&nbsp;</a></div>
+          </div>
+        </div>
+        <div class="titan-caption">
+          <div class="caption-content">
+            <div class="font-alt mb-30 titan-title-size-1">Le sport partout, pour tous.</div>
+            <div class="font-alt mb-40 titan-title-size-4">EVERYWHERE COACHING</div>
+          </div>
+        </div>
+      </section>
+      <div class="main">
+        <section class="module" id="alt-features">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-3 align-center">
+                    <img src="{{ asset('images/lio17.jpg') }}" alt="Feature Image">
+                </div>
+              <div class="col-md-6">
+                <h2 class="module-title font-alt">Pourquoi faire appel à un Coach sportif?</h2>
+                <div class="module-subtitle font-serif">Dans votre vie de tous les jours, lorsque vous avez une question concernant un sujet, vous engagez la démarche de demander son aide ou son avis à un spécialiste du domaine.<br><br>
+                    Dans votre activité physique, prenez le réflexe d’en faire de même, et adressez-vous à un coach sportif pour atteindre vos objectifs, apprendre à bouger mieux et en sécurité.</div>
+                <p class="text-center">« La meilleure manière de prévoir le futur est de le créer »<br>
+                    Peter Drucker</p>
+              </div>
+              <div class="col-md-3 align-center">
+                <img src="{{ asset('images/lio20.jpg') }}" alt="Feature Image">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="module bg-dark-60" data-background="{{ asset('images/lio21.jpg') }}">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="video-box">
+                  <div class="video-box-icon"><a class="video-pop-up" href="{{ asset('video/video-lionel.mp4') }}"><span class="icon-video"></span></a></div>
+                  <div class="video-title font-alt">Small group training en entreprise</div>
+                  <div class="video-subtitle font-alt">Voici un exemple de prestation réalisée chaque semaine au sein de l’entreprise Adidas France.
+                    Depuis Avril 2019, cette société me fait confiance pour animer un cours de HIIT hebdomadaire, mais également des séminaires Team Building lors de l’intégration de nouveaux collaborateurs ou de journées d’achats avec leurs clients.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr class="divider-w">
+        <section class="module" id="team">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="module-title-changed font-alt">Coach sportif à Strasbourg</h2>
+                <h5 class="font-alt text-center"><b>Je m'appelle Lionel Eschenbrenner</b></h5>
+                <div class="module-subtitle font-serif">Fan inconditionnel de sport depuis mon plus jeune âge.
+                    Ancien handballeur de niveau national, pratiquant de CrossFit depuis plusieurs années, j'ai touché à bon nombre de sports (natation, judo, snowboard, etc...)<br><br>
+                    Depuis 4 ans maintenant j'ai décidé de mettre mon savoir à votre service en vous accompagnant dans la réalisation de vos objectifs sportifs, vos objectifs de bien-être ou de santé.</div>
+              </div>
+              <div class="col-md-6 align-center">
+                <img src="{{ asset('images/lio6.jpg') }}" alt="Feature Image">
+                </div>
+            </div>
+          </div>
+        </section>
+        <hr class="divider-w">
+        <section class="module pb-0" id="works">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="module-title font-alt">Mes Prestations</h2>
+                <div class="module-subtitle font-serif">A travers les prestations que je vous propose, je vous invite à entrer dans le milieu des activités physiques et sportives.
+                    Que vous soyez débutant, pratiquant loisir, sportif, ou professionnel, je m’engage à vous fournir un suivi personnalisé et adapté selon votre niveau et vos attentes.
+                    L’ensemble de mes prestations est disponible à domicile, sur votre lieu de travail, en salle de sport et même en visioconférence.</div>
+              </div>
+            </div>
+          </div>
+          <ul class="works-grid works-grid-gut works-grid-3 works-hover-w" id="works-grid">
+            <li class="work-item "><a href="{{ path('correction') }}" target="_blank">
+                <div class="work-image"><img src="{{ asset('images/correction-posturale.jpg') }}" alt="Portfolio Item"/></div>
+                <div class="work-caption font-alt">
+                  <h3 class="work-title"><b>Correction posturale</b></h3>
+                  <div class="work-title">Votre dos vous fait souffrir ? Vous avez des douleurs aux lombaires ?
+                    Vous êtes assis plusieurs heures par jour ?
+                    L’objectif de ce programme sera de renforcer certaines zones de votre corps et corriger ainsi votre posture. </div>
+                </div></a></li>
+            <li class="work-item"><a href="{{ path('lieux') }}" target="_blank">
+                <div class="work-image"><img src="{{ asset('images/lieux-seance.jpg') }}" alt="Portfolio Item"/></div>
+                <div class="work-caption font-alt">
+                  <h3 class="work-title"><b>Lieux des séances</b></h3>
+                  <div class="work-title">Plutôt casanier, au travail, à la salle de sport…
+                    Pas d’inquiétudes à avoir, je m’adapte à vos préférences, pour répondre du mieux possible à vos attentes.</div>
+                </div></a></li>
+            <li class="work-item"><a href="{{ path('musculation') }}" target="_blank">
+                <div class="work-image"><img src="{{ asset('images/musculation-fonctionnelle.jpg') }}" alt="Portfolio Item"/></div>
+                <div class="work-caption font-alt">
+                  <h3 class="work-title"><b>Musculation fonctionnelle</b></h3>
+                  <div class="work-title">Imaginez des séances d’entrainement mêlant mouvements de la vie de tous les jours et mouvements de musculation.
+                    Ce type de programme est idéal pour toutes les personnes désireuses d’avoir un corps plus athlétique, plus de volume ou de force.</div>
+                </div></a></li>
+            <li class="work-item"><a href="{{ path('perte') }}" target="_blank">
+                <div class="work-image"><img src="{{ asset('images/perte-du-poids.jpg') }}" alt="Portfolio Item"/></div>
+                <div class="work-caption font-alt">
+                  <h3 class="work-title"><b>Perte de poids</b></h3>
+                  <div class="work-title">Reprenez le contrôle de votre corps ? 
+                    Marre des kilos superflus, envie de retrouver votre ligne d’avant…</div>
+                </div></a></li>
+            <li class="work-item"><a href="{{ path('prepaconcours') }}" target="_blank">
+                <div class="work-image"><img src="{{ asset('images/prepa-aux-concours.jpg') }}" alt="Portfolio Item"/></div>
+                <div class="work-caption font-alt">
+                  <h3 class="work-title"><b>Préparation aux concours</b></h3>
+                  <div class="work-title">Envie d’embrasser une carrière dans les métiers de l’armée, des forces de l’ordre, du sport…
+                    Faites moi confiance pour mettre toutes les chances de votre coté et être prêt le jour J.</div>
+                </div></a></li>
+            <li class="work-item"><a href="{{ path('preparation') }}" target="_blank">
+                <div class="work-image"><img src="{{ asset('images/preparation-physique.jpg') }}" alt="Portfolio Item"/></div>
+                <div class="work-caption font-alt">
+                  <h3 class="work-title"><b>Préparation physique</b></h3>
+                  <div class="work-title">Vous êtes sportif professionnel, débutant, aguerri, ou pratiquant loisir…
+                    Vous avez une échéance sportive en vue, ensemble nous irons la relever sereinement, car votre préparation aura été optimale.</div>
+                </div></a></li>
+            <li class="work-item"><a href="{{ path('reathletisation') }}" target="_blank">
+                <div class="work-image"><img src="{{ asset('images/reathletisation.jpg') }}" alt="Portfolio Item"/></div>
+                <div class="work-caption font-alt">
+                    <h3 class="work-title"><b>Ré-athlétisation</b></h3>
+                    <div class="work-title">Vous avez subi une blessure, vous avez connu une période d’inactivité sportive…
+                        Mon objectif est de vous accompagner dans cette reprise d’activité en tenant compte de vos contraintes physiques.</div>
+                </div></a></li>
+            <li class="work-item"><a href="{{ path('suivi') }}" target="_blank">
+                <div class="work-image"><img src="{{ asset('images/suivi-nutrition.jpg') }}" alt="Portfolio Item"/></div>
+                <div class="work-caption font-alt">
+                    <h3 class="work-title"><b>Suivi nutrition</b></h3>
+                    <div class="work-title">Vous avez perdu le fil avec votre alimentation, vous n’avez pas le temps de cuisiner, vous vivez à 100 à l’heure.
+                        Je vous propose des solutions afin de reprendre votre alimentation en main, de la rééquilibrer et de ressentir les bienfaits de celle-ci.</div>
+                </div></a></li>
+            <li class="work-item"><a href="{{ path('types') }}" target="_blank">
+                <div class="work-image"><img src="{{ asset('images/types-seances.jpg') }}" alt="Portfolio Item"/></div>
+                <div class="work-caption font-alt">
+                    <h3 class="work-title"><b>Types de séance</b></h3>
+                    <div class="work-title">Vous êtes plutôt solo, duo ou alors entre collègues ou amis…
+                        Pas d’inquiétudes à avoir, je m’adapte à vos préférences, pour répondre du mieux possible à vos attentes et votre vision du sport.</div>
+                </div></a></li>
+          </ul>
+        </section>
+        <!-- <section class="module-small bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-md-8 col-lg-6 col-lg-offset-2">
+                <div class="callout-text font-alt">
+                  <h3 class="callout-title">Want to see more works?</h3>
+                  <p>We are always open to interesting projects.</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="callout-btn-box"><a class="btn btn-w btn-round" href="portfolio_boxed_gutter_col_3.html">Lets view portfolio</a></div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+        <!-- <section class="module" id="services">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Our Services</h2>
+                <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
+              </div>
+            </div>
+            <div class="row multi-columns-row">
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="features-item">
+                  <div class="features-icon"><span class="icon-lightbulb"></span></div>
+                  <h3 class="features-title font-alt">Ideas and concepts</h3>
+                  <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="features-item">
+                  <div class="features-icon"><span class="icon-bike"></span></div>
+                  <h3 class="features-title font-alt">Optimised for speed</h3>
+                  <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="features-item">
+                  <div class="features-icon"><span class="icon-tools"></span></div>
+                  <h3 class="features-title font-alt">Designs &amp; interfaces</h3>
+                  <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="features-item">
+                  <div class="features-icon"><span class="icon-gears"></span></div>
+                  <h3 class="features-title font-alt">Highly customizable</h3>
+                  <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="features-item">
+                  <div class="features-icon"><span class="icon-tools-2"></span></div>
+                  <h3 class="features-title font-alt">Coding &amp; development</h3>
+                  <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="features-item">
+                  <div class="features-icon"><span class="icon-genius"></span></div>
+                  <h3 class="features-title font-alt">Features &amp; plugins</h3>
+                  <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="features-item">
+                  <div class="features-icon"><span class="icon-mobile"></span></div>
+                  <h3 class="features-title font-alt">Responsive design</h3>
+                  <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="features-item">
+                  <div class="features-icon"><span class="icon-lifesaver"></span></div>
+                  <h3 class="features-title font-alt">Dedicated support</h3>
+                  <p>Careful attention to detail and clean, well structured code ensures a smooth user experience for all your visitors.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+       
+        <hr class="divider-w">
+        <!-- <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="assets/images/testimonial_bg.jpg">
+          <div class="testimonials-slider pt-140 pb-140">
+            <ul class="slides">
+              <li>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="module-icon"><span class="icon-quote"></span></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                      <blockquote class="testimonial-text font-alt">I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.</blockquote>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                      <div class="testimonial-author">
+                        <div class="testimonial-caption font-alt">
+                          <div class="testimonial-title">Jack Woods</div>
+                          <div class="testimonial-descr">SomeCompany INC, CEO</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="module-icon"><span class="icon-quote"></span></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                      <blockquote class="testimonial-text font-alt">I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.</blockquote>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                      <div class="testimonial-author">
+                        <div class="testimonial-caption font-alt">
+                          <div class="testimonial-title">Jim Stone</div>
+                          <div class="testimonial-descr">SomeCompany INC, CEO</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="module-icon"><span class="icon-quote"></span></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                      <blockquote class="testimonial-text font-alt">I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.</blockquote>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4">
+                      <div class="testimonial-author">
+                        <div class="testimonial-caption font-alt">
+                          <div class="testimonial-title">Adele Snow</div>
+                          <div class="testimonial-descr">SomeCompany INC, CEO</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section> -->
+        <!-- <section class="module" id="news">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Latest blog posts</h2>
+                <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
+              </div>
+            </div>
+            <div class="row multi-columns-row post-columns">
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="post mb-20">
+                  <div class="post-thumbnail"><a href="#"><img src="{{ asset('images/post-1.jpg') }}" alt="Blog-post Thumbnail"/></a></div>
+                  <div class="post-header font-alt">
+                    <h2 class="post-title"><a href="#">Our trip to the Alps</a></h2>
+                    <div class="post-meta">By&nbsp;<a href="#">Mark Stone</a>&nbsp;| 23 November | 3 Comments
+                    </div>
+                  </div>
+                  <div class="post-entry">
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                  </div>
+                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="post mb-20">
+                  <div class="post-thumbnail"><a href="#"><img src="{{ asset('images/post-2.jpg') }}" alt="Blog-post Thumbnail"/></a></div>
+                  <div class="post-header font-alt">
+                    <h2 class="post-title"><a href="#">Shore after the tide</a></h2>
+                    <div class="post-meta">By&nbsp;<a href="#">Andy River</a>&nbsp;| 11 November | 4 Comments
+                    </div>
+                  </div>
+                  <div class="post-entry">
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                  </div>
+                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-4">
+                <div class="post mb-20">
+                  <div class="post-thumbnail"><a href="#"><img src="{{ asset('images/post-3.jpg') }}" alt="Blog-post Thumbnail"/></a></div>
+                  <div class="post-header font-alt">
+                    <h2 class="post-title"><a href="#">We in New Zealand</a></h2>
+                    <div class="post-meta">By&nbsp;<a href="#">Dylan Woods</a>&nbsp;| 5 November | 15 Comments
+                    </div>
+                  </div>
+                  <div class="post-entry">
+                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                  </div>
+                  <div class="post-more"><a class="more-link" href="#">Read more</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+        <!-- <div class="module-small bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-md-6 col-lg-4 col-lg-offset-2">
+                <div class="callout-text font-alt">
+                  <h3 class="callout-title">Subscribe now</h3>
+                  <p>We will not spam your email.</p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="callout-btn-box">
+                  <form id="subscription-form" role="form" method="post" action="php/subscribe.php">
+                    <div class="input-group">
+                      <input class="form-control" type="email" id="semail" name="semail" placeholder="Your Email" data-validation-required-message="Please enter your email address." required="required"/><span class="input-group-btn">
+                        <button class="btn btn-g btn-round" id="subscription-form-submit" type="submit">Submit</button></span>
+                    </div>
+                  </form>
+                  <div class="text-center" id="subscription-response"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <section class="module" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">Contact</h2>
+                <div class="module-subtitle font-serif">N'hésitez pas à me contacter pour tout autre renseignement.</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3">
+                
+                <form id="contact-form" class="dzForm"role="form" method="post" action="{{ path('contact') }}">
+                  <input type="hidden" value="Contact" name="whichform" >
+                  <div class="form-group">
+                    <label class="sr-only" for="name">Name</label>
+                    <input class="form-control" type="text" id="name" name="name" placeholder="Votre Nom*" required="required" data-validation-required-message="Veuillez saisir votre nom."/>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="email">Email</label>
+                    <input class="form-control" type="email" id="email" name="email" placeholder="Votre Email*" required="required" data-validation-required-message="Veuillez saisir votre adresse e-mail."/>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" rows="7" id="message" name="message" placeholder="Votre Message*" required="required" data-validation-required-message="Veuillez saisir votre message."></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                  <div class="text-center">
+                    <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Submit</button>
+                  </div>
+                </form>
+                <br>
+                <div class="dzFormMsg"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- <div class="module-small bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="widget">
+                  <h5 class="widget-title font-alt">About Titan</h5>
+                  <p>The languages only differ in their grammar, their pronunciation and their most common words.</p>
+                  <p>Phone: +1 234 567 89 10</p>Fax: +1 234 567 89 10
+                  <p>Email:<a href="#">somecompany@example.com</a></p>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="widget">
+                  <h5 class="widget-title font-alt">Recent Comments</h5>
+                  <ul class="icon-list">
+                    <li>Maria on <a href="#">Designer Desk Essentials</a></li>
+                    <li>John on <a href="#">Realistic Business Card Mockup</a></li>
+                    <li>Andy on <a href="#">Eco bag Mockup</a></li>
+                    <li>Jack on <a href="#">Bottle Mockup</a></li>
+                    <li>Mark on <a href="#">Our trip to the Alps</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="widget">
+                  <h5 class="widget-title font-alt">Blog Categories</h5>
+                  <ul class="icon-list">
+                    <li><a href="#">Photography - 7</a></li>
+                    <li><a href="#">Web Design - 3</a></li>
+                    <li><a href="#">Illustration - 12</a></li>
+                    <li><a href="#">Marketing - 1</a></li>
+                    <li><a href="#">Wordpress - 16</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="widget">
+                  <h5 class="widget-title font-alt">Popular Posts</h5>
+                  <ul class="widget-posts">
+                    <li class="clearfix">
+                      <div class="widget-posts-image"><a href="#"><img src="{{ asset('images/rp-1.jpg') }}" alt="Post Thumbnail"/></a></div>
+                      <div class="widget-posts-body">
+                        <div class="widget-posts-title"><a href="#">Designer Desk Essentials</a></div>
+                        <div class="widget-posts-meta">23 january</div>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="widget-posts-image"><a href="#"><img src="{{ asset('images/rp-2.jpg') }}" alt="Post Thumbnail"/></a></div>
+                      <div class="widget-posts-body">
+                        <div class="widget-posts-title"><a href="#">Realistic Business Card Mockup</a></div>
+                        <div class="widget-posts-meta">15 February</div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <hr class="divider-d">
+        
+      </div>
+      
+    
+
+  {% endblock %}

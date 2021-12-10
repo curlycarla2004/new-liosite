@@ -1,0 +1,95 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Everywhere coaching – Le sport partout, pour tous{% endblock %}
+{% block description %}Everywhere coaching – Le sport partout, pour tous{% endblock %}
+
+{% block body %}
+
+        <section class="module pb-0" id="works">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-sm-12">
+                  <h2 class="module-title font-alt">Mes Prestations</h2>
+                  <div class="module-subtitle font-serif">Je vous propose de multiple prestations afin de vous accompagner dans l'atteinte de vos objectifs.<br><br>
+                    Mon objectif est de vous amener à un développement global de votre personne.</div>
+                </div>
+              </div>
+            </div>
+            <ul class="works-grid works-grid-gut works-grid-3 works-w" id="works-grid">
+              <li class="work-item1"><a href="{{ path('correction') }}" target="_blank">
+                  <div class="work-image"><img src="{{ asset('images/correction-posturale.jpg') }}" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title font-size"><b>Correction posturale</b></h3>
+                  </div></a></li>
+              <li class="work-item1"><a href="{{ path('lieux') }}" target="_blank">
+                  <div class="work-image"><img src="{{ asset('images/lieux-seance.jpg') }}" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title font-size"><b>Lieux des séances</b></h3>
+                  </div></a></li>
+              <li class="work-item1"><a href="{{ path('musculation') }}" target="_blank">
+                  <div class="work-image"><img src="{{ asset('images/musculation-fonctionnelle.jpg') }}" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title font-size"><b>Musculation fonctionnelle</b></h3>
+                  </div></a></li>
+            </ul>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-sm-12">
+                  <div class="module-subtitle font-serif"><br><br>"Il y a plus de courage que de talents dans la plupart des réussites."<br><b>Félix Leclerc</b></div>
+                </div>
+              </div>
+            </div>
+            <ul class="works-grid works-grid-gut works-grid-3 works-w" id="works-grid">
+                <li class="work-item1"><a href="{{ path('perte') }}" target="_blank">
+                  <div class="work-image"><img src="{{ asset('images/perte-du-poids.jpg') }}" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title font-size"><b>Perte de poids</b></h3>
+                  </div></a></li>
+              <li class="work-item1"><a href="{{ path('prepaconcours') }}" target="_blank">
+                  <div class="work-image"><img src="{{ asset('images/prepa-aux-concours.jpg') }}" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title font-size"><b>Préparation aux concours</b></h3>
+                  </div></a></li>
+              <li class="work-item1"><a href="{{ path('preparation') }}" target="_blank">
+                  <div class="work-image"><img src="{{ asset('images/preparation-physique.jpg') }}" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                    <h3 class="work-title font-size"><b>Préparation physique</b></h3>
+                  </div></a></li>
+            </ul>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 col-sm-12">
+                  <div class="module-subtitle font-serif"><br><br>"Le plus difficile c'est de se décider à agir, le reste n'est que de la ténacité."<br><b>Amelia Earhart</b></div>
+                </div>
+              </div>
+            </div>
+            <ul class="works-grid works-grid-gut works-grid-3 works-w" id="works-grid">
+              <li class="work-item1"><a href="{{ path('reathletisation') }}" target="_blank">
+                  <div class="work-image"><img src="{{ asset('images/reathletisation.jpg') }}" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                      <h3 class="work-title font-size"><b>Ré-athlétisation</b></h3>
+                  </div></a></li>
+              <li class="work-item1"><a href="{{ path('suivi') }}" target="_blank">
+                  <div class="work-image"><img src="{{ asset('images/suivi-nutrition.jpg') }}" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                      <h3 class="work-title font-size"><b>Suivi nutrition</b></h3>
+                  </div></a></li>
+              <li class="work-item1"><a href="{{ path('types') }}" target="_blank">
+                  <div class="work-image"><img src="{{ asset('images/types-seances.jpg') }}" alt="Portfolio Item"/></div>
+                  <div class="work-caption font-alt">
+                      <h3 class="work-title font-size"><b>Types de séance</b></h3>
+                  </div></a></li>
+            </ul>
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-12 col-sm-12">
+                    <div class="module-subtitle font-serif"><br><br>Les sections ci-contre sont faites pour vous permettre de voir le type de séance que je vous propose et aussi la manière dont je vous propose mon accompagnement.
+                        Cela va de la séance indivuelle, au small group training (12 personnes)…
+                        A votre domicile, sur votre lieu de travail, ou même en visio conférence…
+                        Je ferai tout pour vous aider à réaliser vos objectifs.</div>
+                  </div>
+                </div>
+            </div>
+          </section>
+
+      {% endblock %}

@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Everywhere coaching – Le sport partout, pour tous{% endblock %}
+{% block description %}Everywhere coaching – Le sport partout, pour tous{% endblock %}
+
+{% block body %}
+
+<section class="module bg-dark-60 about-page-header" data-background="{{ asset('images/lio4.jpg') }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h2 class="module-title font-alt">Musculation fonctionnelle</h2>
+          <div class="module-subtitle text-weight">Imaginez des séances d’entrainement mêlant mouvements de la vie de tous les jours et mouvements de musculation.<br><br>
+            Ce type de programme est idéal pour toutes les personnes désireuses d’avoir un corps plus athlétique, plus de volume ou de force.</div>
+        </div>
+      </div>
+    </div>
+</section>
+<section class="module" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 align-center">
+            <img src="{{ asset('images/lio13.jpg') }}" alt="Feature Image">
+        </div>
+        <div class="col-sm-7">
+          <div class="module-subtitle align-left">L’entraînement fonctionnel tente d’adapter et de développer des exercices qui permettent aux individus d’effectuer les activités de la vie quotidienne plus facilement et sans blessures.
+            Dans le cadre de la musculation, l’entraînement fonctionnel consiste principalement en l’exécution de mouvements avec charges reproduisant les mouvements quotidiens.<br><br>
+            J’aime à dire que <b>ma plus grande victoire </b>n’est pas de qu’une personne soit capable de soulever une charge lourde en haltérophilie, mais au contraire que cette <b>personne soit capable de monter ses courses au 5ème étage lorsque l’ascenseur est en panne</b>, 
+            sans être essoufflée ou obligée de s’arrêter à tous les étages.<br><br>
+            Voilà pourquoi un programme d’entrainement en musculation fonctionnelle est, non seulement accessible à tous, mais surtout bénéfique à chacune des personnes qui l’utilisera.
+            Imaginez, un programme sur mesure qui répond à vos attentes et objectifs tout en prenant en compte les contraintes mécaniques de votre vie sur votre corps, autant dire que les résultats se feront vite ressentir.</div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

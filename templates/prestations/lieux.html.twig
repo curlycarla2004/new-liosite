@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Everywhere coaching – Le sport partout, pour tous{% endblock %}
+{% block description %}Everywhere coaching – Le sport partout, pour tous{% endblock %}
+
+{% block body %}
+
+<section class="module bg-dark-60 about-page-header" data-background="{{ asset('images/lio4.jpg') }}">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h2 class="module-title font-alt">Lieux des sénces</h2>
+          <div class="module-subtitle text-weight">Plutôt casanier, au travail, à la salle de sport…<br><br>
+            Pas d’inquiétudes à avoir, je m’adapte à vos préférences, pour répondre du mieux possible à vos attentes.</div>
+        </div>
+      </div>
+    </div>
+</section>
+<section class="module" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="module-subtitle align-left">Selon les contraintes de votre vie privée et professionnelle, je m’adapte à votre emploi du temps pour vos séances d’entrainement, pour cela je vous propose différents lieux où les réaliser :<br><br>
+            – À votre domicile : en amenant du petit matériel, en séance 1 to 1 ou 1 to 2.<br>
+            – Sur votre lieux de travail : avec du petit matériel, en séance 1 to 1 ou small group training.<br>
+            – En salle de sport : en séance 1 to 1 ou 1 to 2.<br>
+            – En visioconférence : pour celles et ceux qui n’auraient pas la possibilité de s’absenter de chez eux, en small group training ou en séance 1 to 1.</div>
+        </div>
+        <div class="col-sm-5 align-center">
+            <img src="{{ asset('images/lio15.jpg') }}" alt="Feature Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
